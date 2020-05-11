@@ -1,7 +1,8 @@
-<style>
-    .main-title{
-        color: blue;
-    }
-  
+.title{
+    margin: 2px 500px;
+    text-align: center;
+    color: blue;
+    border-bottom: 2px solid pink;  
+}
 
-</style>
+
