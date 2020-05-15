@@ -14,8 +14,10 @@ let info1 = {
 
   for(let dados in info1,info2){
     if(dados != "recorrente"){
-    console.log(info1[dados], info2[dados]); 
-  }else{
+      console.log(info1[dados], info2[dados]); 
+    }
+  }
+  
+  if(info1["recorrente"] && info2["recorrente"]=== "Sim"){
     console.log("Ambos recorrentes");
   }
- }
