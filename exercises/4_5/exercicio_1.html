@@ -34,7 +34,7 @@
     <div class="main-content">
       <div class="center-content">
         <p>Texto padrão do nosso site</p>
-        <p class="descricao">-----</p>
+        <p id="descricao">-----</p>
         <p>Trybe</p>
       </div>
     </div>
@@ -52,11 +52,11 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
- function alterarCor(cor) {
-  document.getElementsByClassName("main-content")[0].style.backgroundColor = cor;
-  }
-  alterarCor("green");
-      
+        function mudarParagrafo(text) {
+        document.getElementById("descricao").innerHTML = text;
+      }
+      mudarParagrafo("Estar trabalhando com tecnologia")
+
 
     </script>
   </body>
