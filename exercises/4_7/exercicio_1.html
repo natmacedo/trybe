@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title></title>
+ </head>
+ <body>
+//Add a script tag to the bottom of the page for your code.
+//Add an event listener to the button so that it calls a makeMadLib function when clicked.
+//In the makeMadLib function, retrieve the current values of the form input elements, 
+make a story from them, and output that in the story div (like "Pamela really likes pink cucumbers.")
+//See Solution8
+ <h1>Mad Libs</h1>
+ 
+ <ul>
+  <li>Noun: <input type="text" id="noun">
+  <li>Adjective: <input type="text" id="adjective">
+  <li>Someone's Name: <input type="text" id="person">
+ </ul>
+ 
+ <button id="lib-button">Lib it!</button>
+  
+ <div id="story"></div>
+
+function recebeMouseOver(event) {
+    console.log(event);
+    let selectedColor = document.querySelector(".selected");
+    let elementoHTMLQueOriginouOEvento = event.target;
+    selectedColor.innerHTML = elementoHTMLQueOriginouOEvento.className;
+  }
+
+ <script>
+
+ function Lib(noun, like, people) {
+   let historia = document.getElementById("story");
+   let nome = document.getElementById('noun').value;
+   let qualidade = document.getElementById('adjective').value;
+   let pessoa = document.getElementById('person').value;
+   historia.innerHTML = nome + " gosta de " + qualidade + " " + pessoa + " That's it!";
+}
+
+ let botao = document.getElementById("lib-button");
+ botao.addEventListener('click', Lib);
+
+ </script>
+  
+ </body>
+</html>
